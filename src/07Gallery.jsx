@@ -1,11 +1,11 @@
 import React from 'react';
 import Nook from './08Nook';
 
-function Gallery({ onReply }) {
+function Gallery({ message1, handleReply }) {
   return (
     <div>
-      <h1>Gallery</h1>
-      <Nook onReply={onReply} />
+      <h2>Gallery</h2>
+      <Nook message1={message1} handleReply={handleReply} />
     </div>
   );
 }

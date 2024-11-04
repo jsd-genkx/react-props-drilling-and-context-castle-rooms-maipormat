@@ -1,11 +1,11 @@
 import React from 'react';
 import Gallery from './07Gallery';
 
-function Corridor({ onReply }) {
+function Corridor({ message1, handleReply }) {
   return (
     <div>
-      <h1>Corridor</h1>
-      <Gallery onReply={onReply} />
+      <h2>Corridor</h2>
+      <Gallery message1={message1} handleReply={handleReply} />
     </div>
   );
 }

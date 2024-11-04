@@ -1,11 +1,11 @@
 import React from 'react';
 import SecretRoom from './09SecretRoom';
 
-function Nook({ onReply }) {
+function Nook({ message1, handleReply }) {
   return (
     <div>
-      <h1>Nook</h1>
-      <SecretRoom onReply={onReply} />
+      <h2>Nook</h2>
+      <SecretRoom message1={message1} handleReply={handleReply} />
     </div>
   );
 }

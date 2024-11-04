@@ -1,11 +1,11 @@
 import React from 'react';
 import Corridor from './06Corridor';
 
-function Hall({ onReply }) {
+function Hall({ message1, handleReply }) {
   return (
     <div>
-      <h1>Hall</h1>
-      <Corridor onReply={onReply} />
+      <h2>Hall</h2>
+      <Corridor message1={message1} handleReply={handleReply} />
     </div>
   );
 }

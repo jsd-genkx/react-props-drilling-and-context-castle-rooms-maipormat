@@ -1,11 +1,11 @@
 import React from 'react';
 import Chamber from './03Chamber';
 
-function Tower({ onReply }) {
+function Tower({ message1, handleReply }) {
   return (
     <div>
-      <h1>Tower</h1>
-      <Chamber onReply={onReply} />
+      <h2>Tower</h2>
+      <Chamber message1={message1} handleReply={handleReply} />
     </div>
   );
 }

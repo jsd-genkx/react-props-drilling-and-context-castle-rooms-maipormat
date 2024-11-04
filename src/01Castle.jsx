@@ -1,11 +1,11 @@
 import React from 'react';
 import Tower from './02Tower';
 
-function Castle({ onReply }) {
+function Castle({ message1, handleReply }) {
   return (
     <div>
-      <h1>Castle</h1>
-      <Tower onReply={onReply} />
+      <h2>Castle</h2>
+      <Tower message1={message1} handleReply={handleReply} />
     </div>
   );
 }

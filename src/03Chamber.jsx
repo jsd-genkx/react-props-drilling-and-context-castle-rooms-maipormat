@@ -1,11 +1,11 @@
 import React from 'react';
 import Room from './04Room';
 
-function Chamber({ onReply }) {
+function Chamber({ message1, handleReply }) {
   return (
     <div>
-      <h1>Chamber</h1>
-      <Room onReply={onReply} />
+      <h2>Chamber</h2>
+      <Room message1={message1} handleReply={handleReply} />
     </div>
   );
 }

@@ -2,17 +2,24 @@ import React, { useState } from 'react';
 import Castle from './01Castle';
 
 function App() {
-  const [reply, setReply] = useState('');
+  const [replyMessage, setReplyMessage] = useState("");
 
   const handleReply = (message) => {
-    setReply(message);
+    setReplyMessage(message);
   };
+
+  const message1 = "Do you love React?";
 
   return (
     <div>
-      <h3>Message for JSD8: Do you love React?</h3>
-      <p>Reply from the Secret Room: {reply ? reply : 'Waiting for reply...'}</p>
-      <Castle onReply={handleReply} />
+      <p>Message for JSD8: {message1}</p>
+      <p>
+        Reply from the Secret Room:{" "}
+        <span className="text-red">
+          {replyMessage ? replyMessage : "Waiting for a reply..."}
+        </span>
+      </p>
+      <Castle message1={message1} handleReply={handleReply} />
     </div>
   );
 }
